@@ -1,8 +1,72 @@
 html, body {
     margin: 0;
     padding: 0;
-  }
-  canvas {
+}
+
+canvas {
     display: block;
-  }
-  
+}
+
+#headerTopline{
+    position: absolute;
+    width: 100vw;
+    height: 6px;
+    left: 0px;
+    top: 0px;
+    background: #000000;
+}
+
+#headerBlock{
+    position: absolute;
+    width: 100vw;
+    height: 100px;
+    left: 0px;
+    top: 6px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+#headerBottomline{
+    position: absolute;
+    width: 100vw;
+    height: 6px;
+    left: 0px;
+    top: 100px;
+    background: #000000;
+}
+
+#headerText{
+    position: absolute;
+    width: 417px;
+    height: 59px;
+    left: 88px;
+    top: 20px;
+
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 82px;
+
+    color: #FFFFFF;
+}
+
+#headerMenu{
+    position: absolute;
+    width: 500px;
+    height: 25px;
+    right: 100px;
+    top: 75px;
+}
+
+.headerMenuText{
+    position: relative;
+    margin-left: 20px;
+    width: 100px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 18px;
+    line-height: 21px;
+    display: inline-flex;
+    color: #FFFFFF;
+}
