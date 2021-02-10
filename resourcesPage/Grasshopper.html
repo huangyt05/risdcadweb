@@ -3,9 +3,9 @@
 
 <head>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.2.0/lib/p5.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="/style.css">
     <meta charset="utf-8" />
-    <script src="script.js" defer></script>
+    <!-- <script src="script.js" defer></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
@@ -21,21 +21,21 @@
         </div>
         <div id="headerMenu">
             <div id="menu1" class="Menu">
-                <a class="menuText" href="resourcesPage/index.html">
+                <a class="menuText" href="/resourcesPage/index.html">
                     <div class="headerMenuText">Resources</div>
                 </a>
                 <!-- <div class="headerMenuText">Resources</div> -->
                 <div class="dropdown-content">
-                    <a href="/resourcesPage/Unity.html">Unity</a>
-                    <a href="/resourcesPage/Grasshopper.html">Grasshopper</a>
-                    <a href="/resourcesPage/Blender.html">Blender</a>
-                    <a href="/resourcesPage/Houdini.html">Houdini</a>
-                    <a href="/resourcesPage/Processing.html">Processing</a>
-                    <a href="/resourcesPage/Inspirations.html">Inspirations</a>
+                    <a href="/activitiesPage/index.html">Unity</a>
+                    <a href="#">Grasshopper</a>
+                    <a href="#">Blender</a>
+                    <a href="#">Houdini</a>
+                    <a href="#">Processing</a>
+                    <a href="#">Inspirations</a>
                 </div>
             </div>
             <div id="menu2" class="Menu">
-                <a class="menuText" href="activitiesPage/index.html">
+                <a class="menuText" href="/activitiesPage/index.html">
                     <div class="headerMenuText">Activities</div>
                 </a>
                 <div class="dropdown-content">
@@ -45,7 +45,7 @@
                 </div>
             </div>
             <div id="menu3" class="Menu">
-                <a class="menuText" href="projectsPage/index.html">
+                <a class="menuText" href="/projectsPage/index.html">
                     <div class="headerMenuText">Projects</div>
                 </a>
                 <div class="dropdown-content">
@@ -55,7 +55,7 @@
                 </div>
             </div>
             <div id="menu4" class="Menu">
-                <a class="menuText" href="membersPage/index.html">
+                <a class="menuText" href="/membersPage/index.html">
                     <div class="headerMenuText">Members</div>
                 </a>
                 <div class="dropdown-content">
@@ -66,7 +66,21 @@
             </div>
         </div>
     </div>
-    <script src="background.js"></script>
+    <div id="mainContainer">
+        <div id="content">
+            <div id="placeHolder"></div>
+            <div class="mainTopic">Unity 3D</div>
+            <div class="subContainer">
+                <div class="subTopic">Official Resources</div>
+                <div class="subText">Scripting API Library</div>
+                <a class="subLink" href="https://docs.unity3d.com/ScriptReference/">https://docs.unity3d.com/ScriptReference/</a>
+                <div class="subText">Scripting API Library</div>
+                <a class="subLink" href="https://docs.unity3d.com/ScriptReference/">https://docs.unity3d.com/ScriptReference/</a>
+                <a class="seeMore" href="https://docs.unity3d.com/ScriptReference/">See More</a>
+            </div>
+        </div>
+    </div>
+    <script src="/backgroundSubpage.js"></script>
 </body>
 
 </html>

@@ -25,8 +25,8 @@ function draw() {
     push();
     ambientLight(100);
     noStroke();
-    scale(9);
-    //rotateY(scroll/100);
+    scale(8);
+    rotateY(document.documentElement.scrollTop/1000);
     directionalLight(80, 80, 80, -dirX, -dirY, 1);
     pointLight(50, 50, 50, mouseX, mouseY, 2);
     specularMaterial(20);

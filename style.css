@@ -8,20 +8,31 @@ html, body {
     src: url(assets/Format_1452.otf);
 }
 
+#p5_loading {
+    background-color: #000000;
+    color: rgb(0, 0, 0);
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+}
+
 #header{
     z-index: 1;
 }
 canvas {
     display: block;
+    position: fixed;
 }
 
-#headerTopline{
+#headerTopline {
     position: absolute;
     width: 100vw;
     height: 6px;
     left: 0px;
     top: 0px;
-    background: #000000;
+    background: #181818;
 }
 
 #headerBlock{
@@ -39,7 +50,8 @@ canvas {
     height: 6px;
     left: 0px;
     top: 100px;
-    background: #000000;
+    background: #181818;
+    /* box-shadow: 0px 2px 4px rgba(155, 155, 155, 0.473); */
 }
 
 #headerText{
@@ -47,12 +59,12 @@ canvas {
     width: 417px;
     height: 59px;
     left: 88px;
-    top: 20px;
+    top: 30px;
 
     font-family: 'TITLEfont';
     font-style: normal;
     font-weight: normal;
-    font-size: 72px;
+    font-size: 90px;
     line-height: 82px;
 
     color: #FFFFFF;
@@ -87,7 +99,7 @@ canvas {
 .dropdown-content {
     display: none;
     position: relative;
-    left: 20px;
+    left: 10px;
     background-color: #292929;
     min-width: 80px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -135,31 +147,129 @@ canvas {
 }
 
 #mainContainer{
-    margin:0 auto;
-    position: relative;
+    position: absolute;
     top: 106px;
-    width: 980px;
-    color: white;
+    color: rgb(255, 255, 255);
     z-index: 0;
+    width: 100vw;
+    min-height: 100vh;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    /* background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255, 255, 255, 0.5) 25%, rgba(255, 255, 255, 0.5) 75%, rgba(255,255,255,0) 100%);; */
+}
+
+#content{
+    position: static;
+    font-family: sans-serif;
+    margin:0 auto;
+    width: 980px;
+    /* display: flex; */
+    flex-direction: column;
+    /* background-color: rgba(0, 0, 0, 0.2); */
+    min-height: 100vh;
+    /* padding: 50px; */
+}
+
+#placeHolder{
+    height: 100px;
+}
+
+.menuTopic{
+    position: relative;
+    height: 80px;
+    text-align: center;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
 }
 
 .mainTopic{
     position: relative;
-    height: 42px;
+    height: 80px;
     left: 20px;
-    top: 100px;
-    /* margin-top: 100px; */
-    height: 42px;
     font-family: sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 36px;
-    line-height: 80px;
 }
 
+.subContainer{
+    border-radius: 5px;
+    position: relative;
+    width: auto;
+    height: auto;
+    padding:30px;
+    /* margin-top: 20px; */
+    margin-bottom: 20px;
+    background-color: rgb(15, 15, 15);
+}
 .subTopic{
     position: relative;
-    width: 145px;
+    width: 500px;
     height: 21px;
     left: 30px;
+    font-size: 20px;
+    /* margin-top: 20px; */
+    margin-bottom: 20px;
+}
+
+.subText{
+    position: relative;
+    display: block;
+    width: 500px;
+    left: 50px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.subLink{
+    position: relative;
+    display: block;
+    width: 500px;
+    height: 21px;
+    left: 50px;
+    color: rgb(255, 255, 255);
+}
+
+.seeMore{
+    position: relative;
+    top: 10px;
+    left: 830px;
+    color: rgb(255, 255, 255);
+}
+
+.videoContainer{
+    display: flex;
+}
+.videoTextContainer{
+    margin: auto 0;
+    display: block;
+    width: 480px;
+}
+
+.postText{
+    position: relative;
+    display: block;
+    width: 400px;
+    left: 50px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.postTopic{
+    position: relative;
+    width: 400px;
+    left: 50px;
+    font-size: 20px;
+    /* margin-top: 20px; */
+    margin-bottom: 5px;
+}
+
+.postDate{
+    position: relative;
+    left: 52px;
+    font-size: 12px;
+    /* margin-top: 20px; */
 }
