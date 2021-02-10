@@ -8,6 +8,27 @@ html, body {
     src: url(assets/Format_1452.otf);
 }
 
+@font-face {
+    font-family: 'Montserrat';
+       src: url('/assets/Montserrat-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+       src: url('/assets/Montserrat-Medium.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+       src: url('/assets/Montserrat-Light.ttf');
+    font-weight: light;
+    font-style: normal;
+}
+
 #p5_loading {
     background-color: #000000;
     color: rgb(0, 0, 0);
@@ -88,7 +109,7 @@ canvas {
     margin-left: 20px;
     width: 100px;
     height: 25px;
-    font-family: sans-serif;
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: lighter;
     font-size: 18px;
@@ -111,7 +132,7 @@ canvas {
     padding: 12px 12px;
     text-decoration: none;
     display: block;
-    font-family: sans-serif;
+    font-family: 'Montserrat';
     font-size: 15px;
     line-height: 30px;
 }
@@ -160,7 +181,7 @@ canvas {
 
 #content{
     position: static;
-    font-family: sans-serif;
+    font-family: 'Montserrat';
     margin:0 auto;
     width: 980px;
     /* display: flex; */
@@ -180,7 +201,7 @@ canvas {
     text-align: center;
     font-family: sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 50px;
 }
 
@@ -338,4 +359,48 @@ canvas {
     margin-bottom: 10px;
     font-size: 15px;
     left: 2px;
+}
+
+#frontPageTopic{
+    position: absolute;
+    width: 997px;
+    height: 228px;
+    left: 88px;
+    top: 288px;
+    
+    font-family: 'Archivo Narrow', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 96px;
+    line-height: 104px;
+    
+    color: #FFFFFF;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#frontPageText{
+    position: absolute;
+    width: 810px;
+    height: 465px;
+    left: 88px;
+    top: 528px;
+
+    font-family: 'Archivo Narrow', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 39px;
+
+    color: #FFFFFF;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
