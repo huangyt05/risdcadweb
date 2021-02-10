@@ -85,7 +85,7 @@ canvas {
     font-family: 'TITLEfont';
     font-style: normal;
     font-weight: normal;
-    font-size: 90px;
+    font-size: 70px;
     line-height: 82px;
 
     color: #FFFFFF;
@@ -387,7 +387,7 @@ canvas {
     position: absolute;
     width: 810px;
     height: 465px;
-    left: 88px;
+    left: 95px;
     top: 528px;
 
     font-family: 'Archivo Narrow', sans-serif;
