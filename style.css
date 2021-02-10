@@ -10,21 +10,21 @@ html, body {
 
 @font-face {
     font-family: 'Montserrat';
-       src: url('/assets/Montserrat-Regular.ttf');
+       src: url(/assets/Montserrat-Regular.ttf);
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Montserrat';
-       src: url('/assets/Montserrat-Medium.ttf');
+       src: url(/assets/Montserrat-Medium.ttf);
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Montserrat';
-       src: url('/assets/Montserrat-Light.ttf');
+       src: url(/assets/Montserrat-Light.ttf);
     font-weight: light;
     font-style: normal;
 }
