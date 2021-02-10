@@ -2,7 +2,7 @@ var canvas;
 let model1;
 
 function preload() {
-    model1 = loadModel('/assets/model.obj');
+    model1 = loadModel('assets/model.obj');
 }
 
 function setup() {
