@@ -11,10 +11,10 @@ function setup() {
     canvas.style('z-index', '-1');
 }
 
-function mouseWheel(event) {
-    console.log(event.delta);
-    scroll = event.delta;
-}
+// function mouseWheel(event) {
+//     console.log(event.delta);
+//     scroll = event.delta;
+// }
 
 function draw() {
     let dirX = (mouseX / width - 0.5) * 2;
@@ -26,7 +26,7 @@ function draw() {
     ambientLight(100);
     noStroke();
     scale(9);
-    rotateY(scroll/100);
+    //rotateY(scroll/100);
     directionalLight(80, 80, 80, -dirX, -dirY, 1);
     pointLight(50, 50, 50, mouseX, mouseY, 2);
     specularMaterial(20);
