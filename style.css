@@ -3,6 +3,11 @@ html, body {
     padding: 0;
 }
 
+@font-face {
+    font-family: TITLEfont;
+    src: url(assets/Format_1452.otf);
+  }
+
 canvas {
     display: block;
 }
@@ -41,7 +46,7 @@ canvas {
     left: 88px;
     top: 20px;
 
-    font-family: sans-serif;
+    font-family: 'TITLEfont';
     font-style: normal;
     font-weight: normal;
     font-size: 72px;
@@ -56,17 +61,72 @@ canvas {
     height: 25px;
     right: 100px;
     top: 75px;
+    display: inline-flex;
+}
+
+.menuText{
+    text-decoration: none;
 }
 
 .headerMenuText{
     position: relative;
     margin-left: 20px;
     width: 100px;
+    height: 25px;
     font-family: sans-serif;
     font-style: normal;
     font-weight: lighter;
     font-size: 18px;
-    line-height: 21px;
-    display: inline-flex;
+    line-height: 21px;   
     color: #FFFFFF;
+}
+
+.dropdown-content {
+    display: none;
+    position: relative;
+    left: 20px;
+    background-color: #292929;
+    min-width: 80px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 12px 12px;
+    text-decoration: none;
+    display: block;
+    font-family: sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+#menu1:hover .dropdown-content {
+    display: block;
+}
+#menu2:hover .dropdown-content {
+    display: block;
+}
+#menu3:hover .dropdown-content {
+    display: block;
+}
+#menu4:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a:hover{
+    background-color: #1b1b1b;
+}
+
+#menu1:hover .headerMenuText{
+    text-shadow: 0px 0px #ffffff;
+}
+#menu2:hover .headerMenuText{
+    text-shadow: 0px 0px #ffffff;
+}
+#menu3:hover .headerMenuText{
+    text-shadow: 0px 0px #ffffff;
+}
+#menu4:hover .headerMenuText{
+    text-shadow: 0px 0px #ffffff;
 }
